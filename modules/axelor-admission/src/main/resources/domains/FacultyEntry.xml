@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models
+  http://axelor.com/xml/ns/domain-models/domain-models_5.0.xsd">
+
+  <module package="com.axelor.admission.db" name="admission" />
+  <entity name="FacultyEntry" sequential="true" cachable="true">
+    <many-to-one name="faculty" title="Faculty"
+      ref="com.axelor.admission.db.Faculty" required="true" />
+    <integer name="seats" title="Seats" />
+    <many-to-one name="college" ref="com.axelor.admission.db.College"
+      title="College" />
+  </entity>
+</domain-models>

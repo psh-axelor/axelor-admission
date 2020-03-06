@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_5.0.xsd">
+
+
+  <form name="college-entry-form" title="College entry"
+    model="com.axelor.admission.db.CollegeEntry">
+    <panel title="College Entry Detail">
+      <field name="college" />
+      <field name="admissionEntry" hidden="true"/>
+      <field name="sequence" />
+    </panel>
+  </form>
+  <grid name="college-entry-grid" title="College entries"
+    model="com.axelor.admission.db.CollegeEntry">
+    <field name="college" />
+    <field name="admissionEntry"/>
+    <field name="sequence" />
+  </grid>
+</object-views>
