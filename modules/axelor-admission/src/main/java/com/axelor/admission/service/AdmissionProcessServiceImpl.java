@@ -61,21 +61,7 @@ public class AdmissionProcessServiceImpl implements AdmissionProcessService {
 				}
 				List<AdmissionEntry> admissionEntrySortedList = new ArrayList<AdmissionEntry>();
 				admissionEntrySortedList = Arrays.asList(admissionEntryArray);
-				
-//				Comparator<AdmissionEntry> comparator = new Comparator<AdmissionEntry>() {
-//					@Override
-//					public int compare(AdmissionEntry Ad1, AdmissionEntry Ad2) {
-//						int result = Ad1.getMerit().compareTo(Ad2.getMerit());
-//						if (result == 0) {
-//							return 0;
-//						} else if (result > 0) {
-//							return -1;
-//						} else {
-//							return 1;
-//						}
-//					}
-//				};
-//			
+
 				
 				for (AdmissionEntry admissionEntry : admissionEntrySortedList) {
 					for (CollegeEntry collegeEntry : admissionEntry.getCollegesList()) {
